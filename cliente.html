@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesCliente.js"></script>
+        <meta charset="UTF-8" />
+        <link href="https://res.cloudinary.com/dc04oiqvh/image/upload/v1651703014/03_pafv99.png" rel="icon" type="image/png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body>
+        <nav class="nav flex  items-center justify-between px-5 bg-gradient-to-r from-fuchsia-400 via-pink-150 to-rose-50 px-20">
+            <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+                <img src="Imagenes/logof.jpg" alt="logo software" class="object-cover h-10 w-50">
+              <span class="font-semibold text-xl tracking-tight text-black">   Menu Clientes:</span>
+            </div>
+        </nav>
+        
+        <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg divide-x divide-gray-200 shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+            <li class="w-full">
+                <a href="index.html" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Menu Principal</a>
+            </li>
+            <li class="w-full">
+                <a class="inline-block p-4 w-full text-gray-900 bg-blue-100 rounded-l-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Clientes</a>
+            </li>
+            <li class="w-full">
+                <a href="categoria.html"" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Categorias</a>
+            </li>
+            
+            
+            <li class="w-full">
+                <a href="producto.html" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Productos</a>
+            </li>
+            <li class="w-full">
+                <a href="proveedor.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Proveedores</a>
+            </li>
+            <li class="w-full">
+                <a href="vendedor.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Vendedores</a>
+            </li>
+            <li class="w-full">
+                <a href="facturacion.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Facturacion</a>
+            </li>
+            <li class="w-full">
+                <a href="reporte.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Reportes</a>
+            </li>
+        </ul>
+
+        <form>
+            <div class="grid gap-6 mb-6 md:grid-cols-5 ">
+                <!--Espacio en blanco-->
+            </div>
+            <div class="grid gap-6 mb-6 md:grid-cols-5 ">
+                <div>
+                    <label for="cc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Consultar Cliente:</label>
+                    <input type="number" id="cedulaBusqueda" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese cedula cliente" required>
+                    
+                </div>
+                <div>
+                    <button onclick="" class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-8 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" >
+                        Buscar Cliente
+                    </button>
+                </div>
+                
+            </div>
+            <!--/////////////////////////////////////////////////////////////////////////-->
+            <fieldset>
+                <legend class="sr-only">TypePerson</legend>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tipo de persona:</label>
+                
+              
+                <div class="flex items-center mb-4">
+                  <input id="country-option-1" type="radio" name="countries" value="USA" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" checked>
+                  <label for="country-option-1" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Natural
+                  </label>
+                </div>
+              
+                <div class="flex items-center mb-4">
+                  <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="country-option-2" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    Juridica
+                  </label>
+                </div>
+              </fieldset>
+            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre Completo o Razon Social:</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Razon Social" required>
+                </div>
+                <div>
+                    <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cedula de Ciudadania o NIT:</label>
+                    <input type="number" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cedula" required>
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo Electronico</label>
+                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="holayo@company.com" required>
+            </div> 
+            <div class="grid gap-6 mb-6 md:grid-cols-3">
+                <div>
+                    <label for="Adress" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Direccion:</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Direccion" required>
+                </div>
+                <div>
+                    <label for="city" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ciudad:</label>
+                    <input type="text" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ciudad" required>
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Telefono:</label>
+                    <input type="number" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Telefono" required>
+                </div>
+            </div>
+            
+
+            <div style="text-align: center;">
+
+                <button onclick="" class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-8" >
+                    Crear Cliente
+                </button>
+                <button onclick="" class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-8" >
+                    Guardar Cambios
+                </button>
+                <button onclick="" class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-8" >
+                    Eliminar Cliente
+                </button>
+            </div> 
+            
+         </form>
+        
+
+
+
+        <!--<script type="text/javascript"> 
+            window.onload = getClient(); 
+        </script>-->
+
+    
+        <!--<div id="resultadoCliente"></div>-->
+
+    </body>
+
+
+</html>

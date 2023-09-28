@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesReservaciones.js"></script>
+        <meta charset="UTF-8" />
+        <link href="https://res.cloudinary.com/dc04oiqvh/image/upload/v1651703014/03_pafv99.png" rel="icon" type="image/png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <nav class="nav flex  items-center justify-between px-5 bg-gradient-to-r from-fuchsia-400 via-pink-150 to-rose-50 px-20">
+            <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+                <img src="Imagenes/logof.jpg" alt="logo software" class="object-cover h-10 w-50">
+              <span class="font-semibold text-xl tracking-tight text-black">   Facturación: </span>
+            </div>
+        </nav>
+        
+        <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg divide-x divide-gray-200 shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+            <li class="w-full">
+                <a href="index.html" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Menu Principal</a>
+            </li>
+            <li class="w-full">
+                <a href="cliente.html" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Clientes</a>
+            </li>
+            <li class="w-full">
+                <a href="categoria.html"" class="inline-block p-4 w-full bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Categorias</a>
+            </li>
+            
+            <li class="w-full">
+                <a href="producto.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Productos</a>
+            </li>
+            <li class="w-full">
+                <a href="proveedor.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Proveedores</a>
+            </li>
+            <li class="w-full">
+                <a href="vendedor.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Vendedores</a>
+            </li>
+            <li class="w-full">
+                <a class="inline-block p-4 w-full text-gray-900 bg-teal-100 rounded-l-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Facturacion</a>
+            </li>
+            <li class="w-full">
+                <a href="reporte.html" class="inline-block p-4 w-full bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Reportes</a>
+            </li>
+        </ul>
+
+
+        <form>
+            
+            <div>
+                <h1>Datos Cliente:</h1>
+            </div>
+            <div>
+               <br>
+            </div>
+            <div class="grid gap-6 mb-6 md:grid-cols-5 ">
+                <div>
+                    <label for="cc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Consultar Cliente:</label>
+                    <input type="number" id="cedulaBusqueda" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese cedula cliente" required>
+                    
+                </div>
+                <div>
+                    <button onclick="" class="bg-teal-400 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full mb-8 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" >
+                        Buscar Cliente
+                    </button>
+                </div>
+                
+            </div>
+            <div class="grid gap-6 mb-6 md:grid-cols-3">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre del cliente:</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Razon Social" required>
+                </div>
+                <div>
+                    <label for="dateFacture" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha:</label>
+                    <input type="date" id="dateFacture" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cedula" required>
+                </div>
+                <div>
+                    <label for="numberFacture" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Codigo Factura:</label>
+                    <input type="number" id="iDFacture" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Codigo" required>
+                </div>
+            </div>
+            <div class="grid gap-6 mb-6 md:grid-cols-3">
+                <div>
+                    <label for="Adress" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Direccion:</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Direccion" required>
+                </div>
+                <div>
+                    <label for="city" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ciudad:</label>
+                    <input type="number" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ciudad" required>
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Telefono:</label>
+                    <input type="number" id="age" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Telefono" required>
+                </div>
+            </div>
+            <div>
+                <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
+            </div>
+
+            <div>
+                <h1>Datos Prodcutos:</h1>
+            </div>
+            
+            <div class="grid gap-6 mb-6 md:grid-cols-5 ">
+                <div>
+                    <label for="cc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Consultar Producto:</label>
+                    <input type="number" id="cedulaBusqueda" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese codigo producto" required>
+                    
+                </div>
+                <div>
+                    <button onclick="" class="bg-teal-400 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full mb-8 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" >
+                        Buscar
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="grid gap-6 mb-6 md:grid-cols-7">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre del producto:</label>
+                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label for="categoryProdcut" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Categoria</label>
+                    <input type="text" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Categoria" required>
+                </div>
+                
+                <div>
+                    <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Precio</label>
+                    <input type="number" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Precio" required>
+                </div>  
+                <div>
+                    <label for="stock" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Stock</label>
+                    <input type="number" id="year" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="cantidad del prodcuto" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                <div>
+                    <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cantidad a vender</label>
+                    <input type="number" id="cantite" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+                <div>
+                    <label for="codigo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Precio total:</label>
+                    <input type="number" id="montoFinal" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+                <div>
+                    <button onclick="" class="bg-teal-400 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full mb-8 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" >
+                        Agregar
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
+            </div>
+
+
+            <div style="text-align: center;">
+            
+
+                <button onclick="" class="bg-teal-400 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full mb-8">
+                    Finalizar Venta
+                </button>
+                <button onclick="" class="bg-teal-400 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full mb-8">
+                    Imprimir Factura
+                </button>
+            </div>
+             
+            
+        </form>
+
+
+
+        <script type="text/javascript"> 
+            window.onload = getReservation(); 
+        </script>
+
+        <script type="text/javascript"> 
+            window.onload = getMachine_Reservation(); 
+        </script>
+
+        <script type="text/javascript"> 
+            window.onload = getClient_Reservation(); 
+        </script>
+
+
+        
+
+        <div id="resultadoReservation"></div>
+
+
+        
+    </body>
+
+
+</html>
